@@ -1,0 +1,9 @@
+services:
+  todo-service:
+    image: skyranger2010/todo-service:latest
+    ports:
+      - "8888:80" 
+    volumes:
+      - todo-data:/app/data
+volumes:
+  todo-data:
